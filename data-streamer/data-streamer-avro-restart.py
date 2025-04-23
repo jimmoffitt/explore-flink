@@ -3,8 +3,6 @@ from confluent_kafka import Producer
 from confluent_kafka.serialization import SerializationContext
 from confluent_kafka.schema_registry import SchemaRegistryClient
 from confluent_kafka.schema_registry.avro import AvroSerializer, AvroSchema
-#avro_schema = json.loads(avro_schema_str)
-#avro_schema = AvroSchema(json.loads(avro_schema_str))
 
 import os
 import time
