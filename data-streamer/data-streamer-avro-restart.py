@@ -44,10 +44,6 @@ avro_schema_str = """
 }
 """
 
-# Is this even a thing? 
-def send_to_flink(producer, events):
-    pass
-
 def send_to_kafka(producer, avro_serializer, events):
     try:
         for event in events:
