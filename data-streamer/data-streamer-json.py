@@ -13,10 +13,6 @@ CONFLUENT_KEY = os.getenv("CONFLUENT_KEY")
 CONFLUENT_SECRET = os.getenv("CONFLUENT_SECRET")
 TOPIC_NAME = os.getenv("CONFLUENT_TOPIC")
 
-# Is this even a thing?
-def send_to_flink(producer, events):
-    pass
-
 def send_to_kafka(producer, event): # Changed 'events' to 'event' - we're sending one at a time
     try:
         # Convert Timestamp objects to ISO format
